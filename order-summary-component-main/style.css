@@ -1,0 +1,192 @@
+ 
+  * {
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	/*outline: solid red;*/
+  }
+
+  html {
+  	font-size: 16px;
+  	font-family: 'Red Hat Display', sans-serif;
+  }
+
+  h1 {
+  	font-size: 1.4rem;
+  	font-weight: 900;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6;
+  }
+  body {
+  	width: 100%;
+  	height: auto;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center; 
+  	align-items: center;
+    background-color: hsl(225, 100%, 94%);
+  	background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2em 0; 
+    gap: 1rem;  	
+  }
+
+  .container {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-content: center;
+  	width: 85%;
+  	max-width: 440px;
+  	height: auto;
+  	background-color: #fff;
+  	border-radius: 1em;
+    gap: 0.5em;
+  }
+
+  .container .container_img {
+  	max-width: 100%;
+  	height: 35%;
+  }
+
+  .container .container_img img {
+  	width: 100%;
+  	height: 100%;
+  	border-top-left-radius: 1em;
+  	border-top-right-radius: 1em;
+  }
+
+  .container .container_text {
+  	display: flex;
+  	flex-direction: column;
+  	height: 65%;
+  	text-align: center;
+  	padding: 1em;
+  	justify-content: space-around;
+  	gap: 1.5em;
+  }
+
+  .container .container_text p {
+    padding: 0 1em;
+  }
+
+  .container .container_text .price_box {
+  	display: flex;
+  	flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    align-items: center;
+    padding: 1em;
+    margin: 0 0.5em 0.5em 0.5em;
+    border-radius: 0.7em;
+  }
+
+  .container .container_text .price_box .price_box_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .container_text .price_box .price_plan {
+  	display: flex;
+  	flex-direction: column;
+    padding-left: 0.6em;
+  }
+
+  .container .container_text .price_box .price_plan p {
+    padding: 0;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .container .container_text .price_box .price_box_right a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+  }
+
+  .container .container_text .price_box .price_box_right a:hover {
+    text-decoration: none;
+    color: hsl(245, 83%, 68%);
+  }
+
+  .btn {
+    
+    height: 3em;
+    border: none;
+    border-radius: 0.8em;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .container .container_text .proceed {
+    color: #FFF;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 15px 20px 0 hsl(245deg 75% 52% / 25%)
+  }
+
+  .container .container_text .proceed:hover {
+    background-color: hsl(245, 83%, 68%);
+  }
+
+  .container .container_text .cancel {
+    color: hsl(224, 23%, 55%);
+    background-color: #FFF;
+  }
+
+  .container .container_text .cancel:hover {
+    color: hsl(222, 30%, 21%);
+  }
+
+  /*footer styles*/
+
+footer .attribution {
+  font-size: 0.8rem;
+  text-align: center;    
+  margin-top: 1em;    
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+  @media only screen and (min-width: 968px) {
+    body {
+      background-image: url("./images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 7em 0;      
+    }
+    .container .container_text {
+      padding: 2em 2.5em;
+    }
+
+    .container .container_text .price_box {
+      padding: 1.5em;
+    }
+    .container .container_text .price_box .price_plan {
+    padding-left: 1em;
+    }
+    h1 {
+      font-size: 1.7rem;
+    }
+    h2 {
+      font-size: 1.2rem
+    }
+    p {
+      font-size: 1.1rem;
+    }
+
+
+  }
