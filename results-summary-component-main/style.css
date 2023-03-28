@@ -1,0 +1,273 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"');
+
+:root {
+    /*fonts*/
+    --fuente-principal: 'Hanken Grotesk', sans-serif;
+    /*colors primary*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --reaction-color: rgba(255, 87, 87, 0.1);
+    --memory-color: rgba(255, 176, 31, 0.1);
+    --verbal-color: rgba(0, 189, 145, 0.1);
+    --visual-color: rgba(17, 37, 212, 0.1);
+     /*colors gradients*/
+     --light-slate-blue: hsl(252, 100%, 67%);
+     --light-royal-blue: hsl(241, 81%, 54%);
+     --violet-blue: hsla(256, 72%, 46%, 1);
+     --persian-blue: hsla(241, 72%, 46%, 0);
+     /* colors neutral */
+     --white: hsl(0, 0%, 100%);
+     --pale-blue: hsl(221, 100%, 96%);
+     --light-lavender: hsl(241, 100%, 89%);
+     --dark-gray-blue: hsl(224, 30%, 27%);
+     --black: hsl(0, 0%, 0%);  
+     --gray: hsl(224, 22%, 60%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*outline: solid red;*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+	font-size: 18px;
+	color: var(--black);
+	font-family: var(--fuente-principal);
+    
+}
+
+body {    
+    display: flex;    
+    flex-direction: column; 
+    gap: 2rem;   
+    background-color: var(--pale-blue)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+
+.container {
+   background-color: var(--white);
+   display: flex;
+   flex-direction: column; 
+   width: 100%;   
+}
+
+.container .container-results {
+    background: linear-gradient(hsla(234, 85%, 45%, 0.5), hsla(241, 81%, 54%, 1));
+    color: var(--white);    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 40vh;
+    padding: 0.5rem 2.6rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;    
+}
+
+.container .container-results h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+
+
+.container .container-results p {    
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.6rem auto;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container .container-results .results-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: linear-gradient(hsl(255, 71%, 46%), rgba(76, 34, 201, 0));    
+    
+}
+
+.container .container-results .results-circle h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+
+.container .container-results .results-circle p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container .container-summary {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.6rem;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+
+}
+
+.container .container-summary h2 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.container .container-summary .summary-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 0 0.7rem;
+}
+
+.container .container-summary .summary-box .box-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.container .container-summary .summary-box .box-result  {
+    color: var(--gray);
+}
+
+.container .container-summary .summary-box .box-result span {
+    color: var(--black);
+}
+
+.reaction {
+    background-color: var(--reaction-color);
+    color: var(--light-red);
+}
+
+.memory {
+    background-color: var(--memory-color);    
+    color: var(--orangey-yellow);
+}
+
+.verbal {
+    background-color: var(--verbal-color);
+    color: var(--green-teal);
+}
+
+.visual {
+    background-color: var(--visual-color);
+    color: var(--cobalt-blue);
+}
+
+button {
+    background-color: var(--dark-gray-blue);
+    border: none;
+    color: var(--white);
+    height: 2.7rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
+
+footer .attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);         
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--pale-blue);
+        height: 100vh;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 700px;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;        
+        border-radius: 1rem;
+        width: 650px;
+        height: 400px; 
+        box-shadow: 0.5rem 0.5rem 2rem 0.1rem var(--light-lavender);       
+    }
+    .container .container-results {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1rem 2.6rem;
+    }
+    .container .container-results p {
+        font-size: 1.1rem;
+    }
+
+    .container .container-results .results-text p {
+        font-size: 1rem;
+    }
+
+    .container .container-results .results-circle {
+        height: 8rem;
+        width: 8rem;
+    }
+    .container .container-results .results-circle h1 {
+        font-size: 3.8rem;
+    }
+
+    .container .container-results .results-circle p {
+        font-size: 1rem;
+    }
+    .container .container-summary {
+        width: 50%;
+        justify-content: center;
+        gap: 0.8rem;
+        margin: 1.3rem 1.6rem;
+    }
+    .container .container-summary .summary-box {
+        height: 2.5rem;
+    }
+    button {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    button:hover {
+        background: linear-gradient(hsla(234, 85%, 45%, 0.5), hsla(241, 81%, 54%, 1));
+        cursor: pointer;
+    }
+    button:active {
+        background: linear-gradient(hsla(234, 85%, 45%, 0.5), hsla(241, 81%, 54%, 1));
+        cursor: pointer;
+    }
+}
